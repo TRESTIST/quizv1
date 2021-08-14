@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz</title>
+    <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="sidenav">
+      <p id="english" href="#">English</p>
+      <p id="german" href="#">German</p>
+      <p id="math" href="#">Math</p>
+    </div>
+
+    <div  class="main">
+      <div class="nav" onclick="openSideNav()" >
+        <div class="nav-item-1"></div>
+        <div class="nav-item-2"></div>
+      </div>
+      <div class="main__inner"></div>
+    </div>
+
+ <div class="quiz-container" > 
+      <div class="question-number">
+        <h3>
+          Вопрос
+          <span id="number-of-question"></span>
+          из
+          <span id="number-of-all-questions"></span>
+        </h3>
+      </div>
+      <div id="question"></div>
+      <ul class="options">
+        <li class="option option1">
+          <input type="radio" id="a" name="answer" class="answer" />
+          <label id="a_text" for="a"></label>
+        </li>
+        <li class="option option2">
+          <input type="radio" id="b" name="answer" class="answer" />
+          <label id="b_text" for="b"></label>
+        </li>
+        <li class="option option3">
+          <input type="radio" id="c" name="answer" class="answer" />
+          <label id="c_text" for="c"></label>
+        </li>
+        <li class="option option4">
+          <input type="radio" id="d" name="answer" class="answer" />
+          <label id="d_text" for="d"></label>
+        </li>
+      </ul>
+      <div class="button">
+        <button id="btn-next">Next</button>
+      </div>
+      <div id="answers-tracker"></div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
